@@ -1,0 +1,109 @@
+body {
+    display: flex;
+    margin: 0;
+    min-height: 100vh;
+    width: 100vw;
+    color: var(--color-base-text);
+    flex-wrap: wrap;
+}
+
+.logo {
+    min-height: 35vh;
+    padding-top: 20vh;
+    box-sizing: border-box;
+    font-size: calc(0.75rem + 1.5vw);
+}
+.content {
+    flex-grow: 6.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 65vw;
+    min-width: 375px;
+    background-color: var(--color-base-bg);
+    overflow-y: scroll;
+    max-height: 100vh;
+}
+
+.hero {
+    background-image: var(--background-img);
+    height: 100vh;
+    width: 35vw;
+    flex-grow: 3.5;
+    min-width: 375px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.input-container {
+    display: flex;
+    padding: 5px;
+    flex-direction: column;
+}
+
+.input-container:last-child {
+    padding: 10px;
+    justify-content: center;
+}
+
+.form {
+    min-height: 60vh;
+}
+
+input, select {
+    border-radius: 5px;
+    border: var(--border-btn)
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+input:valid {
+    border: 2px solid green;
+}
+
+input:placeholder-shown {
+    border: var(--border-btn) /* Red border only if the input is empty */
+}
+
+:root.dark {
+    --border-btn: 1px solid rgb(220, 220, 220);
+    --color-base-bg: rgb(18, 18, 18);
+    --color-base-text: rgb(240, 240, 240);
+    --color-btn-bg: rgb(36, 36, 36);
+    --background-img: url('pics/cat.png');
+  }
+
+:root.light {
+    --border-btn: 1px solid rgb(36, 36, 36);
+    --color-base-bg: rgb(255, 255, 255);
+    --color-base-text: rgb(18, 18, 18);
+    --color-btn-bg: rgb(220, 220, 220);
+    --background-img: url('pics/cat 2.png');
+  }
+
+:root {
+    --border-btn: 1px solid rgb(36, 36, 36);
+    --color-base-bg: rgb(255, 255, 255);
+    --color-base-text: rgb(18, 18, 18);
+    --color-btn-bg: rgb(220, 220, 220);
+    --background-img: url('pics/cat 2.png');
+}
+
+:root.cowboy {
+    --background-img: url('pics/cowboy.png');
+}
+
+.header > button {
+    border: none;
+    background-color: var(--color-base-bg);
+    color: var(--color-base-text);
+    align-items: center;
+}
+
+a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+  }

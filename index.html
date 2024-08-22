@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="hero">
+    </div>
+    <div class="content">
+        <div class="header">
+            <button class="theme-toggle">light</button>
+            <button class="theme-toggle">dark</button>
+            <button class="theme-toggle">cowboy</button>
+        </div>
+        <div class="logo">
+            <h1>Cat lover passport</h1>
+        </div>
+    <div class="form">
+        <form class="sign-up-form">
+            <fieldset class="form-input">
+                <div class="input-container">
+                    <label for="full_name">
+                        Full Name:
+                    </label>
+                    <input type="text" id="full_name" name="full_name" 
+                    aria-label="Full Name" placeholder="Meow Meowerson" minlenght="3" required>
+                </div>
+                <div class="input-container">
+                    <label for="email">
+                        Email:
+                    </label>
+                    <input type="email" name="email" id="email" placeholder="cat@catmail.meow" 
+                    aria-label="Email" required>
+                </div>
+                <div class="input-container">
+                    <label for="cat_type" class="cat_type">What is your favorite cat type?</label>
+                    <select name="cat_type">
+                        <option label=""></option>
+                        <option value="Funky cat">Funky cat</option>
+                        <option value="Office cat">Office cat</option>
+                        <option value="Girly cat">Girly cat</option>
+                        <option value="Meowwww">Meowwww</option>
+                        <option value="Protector cat">Protector cat</option>
+                        <option value="Dog">Dog</option>
+                      </select>
+                </div>
+                <div class="input-container">
+                    <label for="cat_secret" class="cat_secret">Favorite cat secret: </label>
+                    <input type="password" name="password" id="password" placeholder="I like kitty titties" required>
+                </div>
+                <div class="input-container">
+                    <button type="submit" id="submit">Submit</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <div class="footer">
+        <a href="https://www.instagram.com/malinebiseri/" target ="_blank">made by Kobe
+        image by Anja</a>
+    </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
