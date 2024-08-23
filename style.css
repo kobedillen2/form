@@ -22,7 +22,7 @@ body {
     width: 65vw;
     min-width: 375px;
     background-color: var(--color-base-bg);
-    overflow-y: scroll;
+    overflow-y: hidden;
     max-height: 100vh;
 }
 
