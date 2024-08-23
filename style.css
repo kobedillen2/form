@@ -5,6 +5,7 @@ body {
     width: 100vw;
     color: var(--color-base-text);
     flex-wrap: wrap;
+    overscroll-behavior: none;
 }
 
 .logo {
@@ -101,6 +102,10 @@ input:placeholder-shown {
     background-color: var(--color-base-bg);
     color: var(--color-base-text);
     align-items: center;
+    font-weight: bold;
+}
+.active {
+    text-decoration: underline;
 }
 
 a {

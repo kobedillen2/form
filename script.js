@@ -43,9 +43,17 @@ function setTheme(theme) {
 
 btns = document.querySelectorAll('.theme-toggle')
 
+function removeClass() {
+  btns.forEach(function(i) {
+    i.classList.remove("active")
+  })
+}
+
 btns.forEach(function(i) {
   i.addEventListener('click', () => {
+  removeClass()
   setTheme(i.textContent)
+  i.className = "active"
   })
 })
 
